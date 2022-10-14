@@ -1,4 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
+    position: relative;
     max-width: 1170px;
     margin: 5px auto;
     width: 100%;
@@ -49,3 +56,92 @@ body {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: double;   
 }
+
+.footer {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+.create__btn {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    background: linear-gradient(70deg, #fff953, #ff34);
+    font-size: 30px;
+    padding: 5px;
+    border: none;
+    transition: all 0.4s ease;
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient(90deg, #ceed1fbb, #02b389);
+        color: #820202;
+    }
+}
+
+.modal {
+    display: none;
+}
+ .close__btn {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    &::before {
+        position: absolute;
+        content: '';
+        background: #000;
+        height: 5px;
+        width: 30px;
+        top: 50%;
+        right: 50%;
+        transform: rotate(45deg);
+    }
+
+    &::after {
+        position: absolute;
+        content: '';
+        background: #000;
+        height: 5px;
+        width: 30px;
+        right: 50%;
+        top: 50%;
+        transform: rotate(-45deg);
+        
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+ 
+}
+
+ .modal__text {
+    position: relative;
+    display: flex;
+    padding: 25px 35px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background: #00ffff;
+        width: 100%;
+        height: 1px;
+        top: 10px;
+        right: 0;
+    }
+ }
+
+ .active {
+    padding: 0;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    height: 99vh;
+    width: 1200px;
+    background: rgba(212, 212, 64, 0.884);
+ }

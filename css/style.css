@@ -1,4 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
+  position: relative;
   max-width: 1170px;
   margin: 5px auto;
   width: 100%;
@@ -61,4 +69,117 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   -webkit-text-decoration: double;
           text-decoration: double;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px 0;
+}
+
+.create__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  background: -o-linear-gradient(20deg, #fff953, rgba(255, 255, 51, 0.2666666667));
+  background: linear-gradient(70deg, #fff953, rgba(255, 255, 51, 0.2666666667));
+  font-size: 30px;
+  padding: 5px;
+  border: none;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.create__btn:hover {
+  cursor: pointer;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(206, 237, 31, 0.7333333333)), to(#02b389));
+  background: -o-linear-gradient(left, rgba(206, 237, 31, 0.7333333333), #02b389);
+  background: linear-gradient(90deg, rgba(206, 237, 31, 0.7333333333), #02b389);
+  color: #820202;
+}
+
+.modal {
+  display: none;
+}
+
+.close__btn {
+  width: 100%;
+  height: 40px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 15px;
+}
+.close__btn::before {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 5px;
+  width: 30px;
+  top: 50%;
+  right: 50%;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.close__btn::after {
+  position: absolute;
+  content: "";
+  background: #000;
+  height: 5px;
+  width: 30px;
+  right: 50%;
+  top: 50%;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.close__btn:hover {
+  cursor: pointer;
+}
+
+.modal__text {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 35px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.modal__text::before {
+  content: "";
+  position: absolute;
+  background: #00ffff;
+  width: 100%;
+  height: 1px;
+  top: 10px;
+  right: 0;
+}
+
+.active {
+  padding: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 99vh;
+  width: 1200px;
+  background: rgba(212, 212, 64, 0.884);
 }
