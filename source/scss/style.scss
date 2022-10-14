@@ -1,0 +1,51 @@
+body {
+    max-width: 1170px;
+    margin: 5px auto;
+    width: 100%;
+}
+
+.header {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    #request {
+        font-size: 40px;
+        padding: 5px;
+        width: 500px;
+        &:focus {
+            background: #ff3d3d;
+        }
+    }
+    .buttons {
+        display: flex;
+        gap: 30px;
+        padding: 10px;
+    
+        &__btn {
+            min-width: 100px;
+            padding: 10px;
+            color: aqua;
+            background: linear-gradient(90deg, #706300, #450645);
+            border: none;
+            transition: all 1s ease;
+            
+            &:hover {
+                cursor: pointer;
+                color: #000;
+                background: linear-gradient(90deg, #f1e9ad, #e03de0);
+                
+            }
+        }
+    }
+  
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    font-size: 40px;
+    color: orange;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-decoration: double;   
+}

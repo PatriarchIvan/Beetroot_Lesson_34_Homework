@@ -1,0 +1,64 @@
+body {
+  max-width: 1170px;
+  margin: 5px auto;
+  width: 100%;
+}
+
+.header {
+  padding: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.header #request {
+  font-size: 40px;
+  padding: 5px;
+  width: 500px;
+}
+.header #request:focus {
+  background: #ff3d3d;
+}
+.header .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+}
+.header .buttons__btn {
+  min-width: 100px;
+  padding: 10px;
+  color: aqua;
+  background: -webkit-gradient(linear, left top, right top, from(#706300), to(#450645));
+  background: -o-linear-gradient(left, #706300, #450645);
+  background: linear-gradient(90deg, #706300, #450645);
+  border: none;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.header .buttons__btn:hover {
+  cursor: pointer;
+  color: #000;
+  background: -webkit-gradient(linear, left top, right top, from(#f1e9ad), to(#e03de0));
+  background: -o-linear-gradient(left, #f1e9ad, #e03de0);
+  background: linear-gradient(90deg, #f1e9ad, #e03de0);
+}
+
+.result {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px;
+  font-size: 40px;
+  color: orange;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  -webkit-text-decoration: double;
+          text-decoration: double;
+}
